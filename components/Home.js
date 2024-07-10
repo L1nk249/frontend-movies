@@ -16,6 +16,7 @@ function Home() {
   .then(data=>{
     console.log(data)
     setMovies(data.movies)
+    
   
   })
   
