@@ -8,16 +8,17 @@ import styles from '../styles/Home.module.css';
 
 function Home() {
 
-  const [moviesData,setMovies]=useState ([])
+  const [moviesData,setMoviesData]=useState ([])
 
   useEffect(()=>{
-    fetch('https://backend-movies-bay.vercel.app/')
+    fetch('https://backend-movies-bay.vercel.app/movies')
     .then(response => response.json())
     .then(data=>{
     console.log(data)
-    setMovies(data.movies)
+    setMoviesData(data.movies)
   })
-  
+
+
   },[])
   
 
