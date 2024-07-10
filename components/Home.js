@@ -11,7 +11,7 @@ function Home() {
   const [moviesData,setMovies]=useState ([])
 
   useEffect(()=>{
-    fetch('https://frontend-movies-zeta.vercel.app/')
+    fetch('https://backend-movies-delta.vercel.app/')
   .then(response=>response.json())
   .then(data=>{
     console.log(data)
